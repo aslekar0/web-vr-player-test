@@ -42,7 +42,7 @@ export class VideoPlayer extends Component {
                 <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_2k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="1440p"></source>
                 <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_4k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="4K"></source>
                 <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_6k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="6K"></source>
-                <source src="https://nyc3.digitaloceanspaces.com/eclatech-edits/45sec-_1_1.mp4" data-quality="8K"></source>
+                <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_6k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="8K"></source>
             </web-vr-video-player>
         )
     }
