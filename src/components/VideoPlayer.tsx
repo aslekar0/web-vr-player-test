@@ -8,41 +8,52 @@ declare global {
     }
 }
 
-export class VideoPlayer extends Component {
+let instances: VideoPlayer[] = [];
+let script: HTMLScriptElement = document.createElement("script");
+script.src = "https://video-player.nyc3.digitaloceanspaces.com/bundle.js";
+script.async = true;
 
-    script: HTMLScriptElement
+type Props = {
+    thumbnail?: string,
+    allPossibleQualities?: string,
+    defaultVolume?: string,
+    defaultZoom?: string,
+    defaultProjection?: string,
+    hapticsCSV?: string,
+    children?: JSX.Element[]
+}
+
+export class VideoPlayer extends Component<Props> {
 
     constructor(props: any) {
         super(props);
-
-        this.script = document.createElement("script");
-        this.script.src = "https://video-player.nyc3.digitaloceanspaces.com/bundle.js";
-        this.script.async = true;
     }
 
     componentDidMount() {
-        document.body.appendChild(this.script);
+        instances.push(this);
+        if (instances.length === 1) {
+            document.body.appendChild(script);
+        }
     }
 
     componentWillUnmount() {
-        document.body.removeChild(this.script);
+        if (instances.length === 1) {
+            document.body.removeChild(script);
+        }
+        instances.splice(instances.indexOf(this), 1);
     }
 
     render() {
         return (
             <web-vr-video-player
-                thumbnail="https://b8h6h9v9.ssl.hwcdn.net/vrh/hugethumbs/vrh0373_minxxmarley_oliverfaze_180-c760x430.jpg"
-                allPossibleQualities="1080p,1440p,4K,6K,8K"
-                defaultVolume="1"
-                defaultZoom="0.5"
-                defaultProjection="flat"
-                hapticsCSV="https://video-player.nyc3.digitaloceanspaces.com/trail-vrh0373_minxxmarley_oliverfaze_180_1k.csv"
+                thumbnail={this.props.thumbnail}
+                allPossibleQualities={this.props.allPossibleQualities}
+                defaultVolume={this.props.defaultVolume}
+                defaultZoom={this.props.defaultZoom}
+                defaultProjection={this.props.defaultProjection}
+                hapticsCSV={this.props.hapticsCSV}
             >
-                <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_1k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="1080p"></source>
-                <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_2k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="1440p"></source>
-                <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_4k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="4K"></source>
-                <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_6k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="6K"></source>
-                <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_6k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="8K"></source>
+                {this.props.children}
             </web-vr-video-player>
         )
     }

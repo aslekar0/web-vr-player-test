@@ -40,10 +40,15 @@
 
 /* CUSTOM */
 body {
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 web-vr-video-player {
   width: 100%;
   height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
