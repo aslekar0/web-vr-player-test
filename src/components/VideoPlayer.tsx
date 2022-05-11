@@ -1,4 +1,4 @@
-import { Component, HTMLAttributes } from "react";
+import { Component } from "react";
 
 declare global {
     namespace JSX {
