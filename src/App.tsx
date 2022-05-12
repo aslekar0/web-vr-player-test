@@ -34,6 +34,9 @@ function App() {
         >
           <source src="https://video-player.nyc3.digitaloceanspaces.com/SLR_VRFanService_Private%20Dance%20with%20Haley%20Spades_3072p_22146_LR_180_1k.mp4" data-quality="1080p"></source>
           <source src="https://video-player.nyc3.digitaloceanspaces.com/SLR_VRFanService_Private%20Dance%20with%20Haley%20Spades_3072p_22146_LR_180_2k.mp4" data-quality="1440p"></source>
+          <source src="https://video-player.nyc3.digitaloceanspaces.com/SLR_VRFanService_Private%20Dance%20with%20Haley%20Spades_3072p_22146_LR_180_4k.mp4" data-quality="4K"></source>
+          <source src="https://video-player.nyc3.digitaloceanspaces.com/SLR_VRFanService_Private%20Dance%20with%20Haley%20Spades_3072p_22146_LR_180_6k.mp4" data-quality="6K"></source>
+          <source src="https://video-player.nyc3.digitaloceanspaces.com/SLR_VRFanService_Private%20Dance%20with%20Haley%20Spades_3072p_22146_LR_180_8k.mp4" data-quality="8K"></source>
         </VideoPlayer>
 
         <VideoPlayer
