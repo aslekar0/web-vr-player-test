@@ -18,6 +18,7 @@ function App() {
             siteQualities="1080p,1440p,4K,6K,8K"
             defaultVolume="1"
             defaultZoom="0.5"
+            enableScrollToZoom="true"
             defaultProjection="flat"
             hapticsCSV="https://video-player.nyc3.digitaloceanspaces.com/trail-vrh0373_minxxmarley_oliverfaze_180_1k.csv"
           >
@@ -38,6 +39,7 @@ function App() {
             siteQualities="1080p,1440p,4K,6K,8K"
             defaultVolume="1"
             defaultZoom="0.5"
+            enableScrollToZoom="true"
             defaultProjection="flat"
             hapticsCSV="https://video-player.nyc3.digitaloceanspaces.com/SLR_VRFanService_Private_Dance_with_Haley_Spades_3072p_22146_LR_180_Final_Realcumber.csv"
           >
@@ -58,6 +60,7 @@ function App() {
             siteQualities="1080p,1440p,4K,6K,8K"
             defaultVolume="1"
             defaultZoom="0.5"
+            enableScrollToZoom="true"
             defaultProjection="flat"
             hapticsCSV="https://video-player.nyc3.digitaloceanspaces.com/trail-vrh0373_minxxmarley_oliverfaze_180_1k.csv"
           >
@@ -78,6 +81,7 @@ function App() {
             siteQualities="1080p,1440p,4K,6K,8K"
             defaultVolume="1"
             defaultZoom="0.5"
+            enableScrollToZoom="true"
             defaultProjection="flat"
             hapticsCSV="https://video-player.nyc3.digitaloceanspaces.com/trail-vrh0373_minxxmarley_oliverfaze_180_1k.csv"
           >

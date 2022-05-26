@@ -19,6 +19,7 @@ type Props = {
     siteQualities?: string,
     defaultVolume?: string,
     defaultZoom?: string,
+    enableScrollToZoom?: string,
     defaultProjection?: string,
     hapticsCSV?: string,
     children?: JSX.Element[]
@@ -52,6 +53,7 @@ export class VideoPlayer extends Component<Props> {
                 sitequalities={this.props.siteQualities}
                 defaultvolume={this.props.defaultVolume}
                 defaultzoom={this.props.defaultZoom}
+                enablescrolltozoom={this.props.enableScrollToZoom}
                 defaultprojection={this.props.defaultProjection}
                 hapticscsv={this.props.hapticsCSV}
             >
