@@ -15,8 +15,8 @@ script.async = true;
 
 type Props = {
     className?: string,
-    thumbnail?: string,
-    allPossibleQualities?: string,
+    coverImage?: string,
+    siteQualities?: string,
     defaultVolume?: string,
     defaultZoom?: string,
     defaultProjection?: string,
@@ -48,12 +48,12 @@ export class VideoPlayer extends Component<Props> {
         return (
             <web-vr-video-player
                 className={this.props.className || ""}
-                thumbnail={this.props.thumbnail}
-                allPossibleQualities={this.props.allPossibleQualities}
-                defaultVolume={this.props.defaultVolume}
-                defaultZoom={this.props.defaultZoom}
-                defaultProjection={this.props.defaultProjection}
-                hapticsCSV={this.props.hapticsCSV}
+                coverimage={this.props.coverImage}
+                sitequalities={this.props.siteQualities}
+                defaultvolume={this.props.defaultVolume}
+                defaultzoom={this.props.defaultZoom}
+                defaultprojection={this.props.defaultProjection}
+                hapticscsv={this.props.hapticsCSV}
             >
                 {this.props.children}
             </web-vr-video-player>

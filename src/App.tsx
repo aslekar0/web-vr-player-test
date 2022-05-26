@@ -14,8 +14,8 @@ function App() {
           <h3>(Only second half is scripted)</h3>
           <VideoPlayer
             className="player"
-            thumbnail="https://b8h6h9v9.ssl.hwcdn.net/vrh/hugethumbs/vrh0373_minxxmarley_oliverfaze_180-c760x430.jpg"
-            allPossibleQualities="1080p,1440p,4K,6K,8K"
+            coverImage="https://b8h6h9v9.ssl.hwcdn.net/vrh/hugethumbs/vrh0373_minxxmarley_oliverfaze_180-c760x430.jpg"
+            siteQualities="1080p,1440p,4K,6K,8K"
             defaultVolume="1"
             defaultZoom="0.5"
             defaultProjection="flat"
@@ -34,8 +34,8 @@ function App() {
           <h3>-</h3>
           <VideoPlayer
             className="player"
-            thumbnail="https://b8h6h9v9.ssl.hwcdn.net/vrh/hugethumbs/vrh0373_minxxmarley_oliverfaze_180-c760x430.jpg"
-            allPossibleQualities="1080p,1440p,4K,6K,8K"
+            coverImage="https://b8h6h9v9.ssl.hwcdn.net/vrh/hugethumbs/vrh0373_minxxmarley_oliverfaze_180-c760x430.jpg"
+            siteQualities="1080p,1440p,4K,6K,8K"
             defaultVolume="1"
             defaultZoom="0.5"
             defaultProjection="flat"
@@ -54,8 +54,8 @@ function App() {
           <h3>-</h3>
           <VideoPlayer
             className="player"
-            thumbnail="https://b8h6h9v9.ssl.hwcdn.net/vrh/hugethumbs/vrh0373_minxxmarley_oliverfaze_180-c760x430.jpg"
-            allPossibleQualities="1080p,1440p,4K,6K,8K"
+            coverImage="https://b8h6h9v9.ssl.hwcdn.net/vrh/hugethumbs/vrh0373_minxxmarley_oliverfaze_180-c760x430.jpg"
+            siteQualities="1080p,1440p,4K,6K,8K"
             defaultVolume="1"
             defaultZoom="0.5"
             defaultProjection="flat"
@@ -74,8 +74,8 @@ function App() {
           <h3>-</h3>
           <VideoPlayer
             className="player"
-            thumbnail="https://b8h6h9v9.ssl.hwcdn.net/vrh/hugethumbs/vrh0373_minxxmarley_oliverfaze_180-c760x430.jpg"
-            allPossibleQualities="1080p,1440p,4K,6K,8K"
+            coverImage="https://b8h6h9v9.ssl.hwcdn.net/vrh/hugethumbs/vrh0373_minxxmarley_oliverfaze_180-c760x430.jpg"
+            siteQualities="1080p,1440p,4K,6K,8K"
             defaultVolume="1"
             defaultZoom="0.5"
             defaultProjection="flat"
