@@ -14,6 +14,7 @@ script.src = "https://video-player.nyc3.digitaloceanspaces.com/bundle.js";
 script.async = true;
 
 type Props = {
+    className?: string,
     thumbnail?: string,
     allPossibleQualities?: string,
     defaultVolume?: string,
@@ -46,6 +47,7 @@ export class VideoPlayer extends Component<Props> {
     render() {
         return (
             <web-vr-video-player
+                className={this.props.className || ""}
                 thumbnail={this.props.thumbnail}
                 allPossibleQualities={this.props.allPossibleQualities}
                 defaultVolume={this.props.defaultVolume}
