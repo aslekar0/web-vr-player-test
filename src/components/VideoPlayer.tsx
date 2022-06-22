@@ -10,7 +10,7 @@ declare global {
 
 let instances: VideoPlayer[] = [];
 let script: HTMLScriptElement = document.createElement("script");
-script.src = "https://video-player.nyc3.digitaloceanspaces.com/bundle.js";
+script.src = "https://video-player.nyc3.digitaloceanspaces.com/release/bundle.js";
 script.async = true;
 
 type Props = {
@@ -26,10 +26,6 @@ type Props = {
 }
 
 export class VideoPlayer extends Component<Props> {
-
-    constructor(props: any) {
-        super(props);
-    }
 
     componentDidMount() {
         instances.push(this);
