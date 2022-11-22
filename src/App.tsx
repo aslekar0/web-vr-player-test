@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div className="grid">
         
-        <div>
+        {/* <div>
           <h2>Trailer hosted on VRHush</h2>
           <h3>(Only second half is scripted)</h3>
           <VideoPlayer
@@ -29,7 +29,7 @@ function App() {
             <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_6k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="6K"></source>
             <source src="https://e2z4r8q7.ssl.hwcdn.net/vrh/trail-vrh0373_minxxmarley_oliverfaze_180_6k.mp4?ri=2000000&rs=10000&ttl=1649274462&token=a89bc5f2499d784eb7698b169d47834d" data-quality="8K"></source>
           </VideoPlayer>
-        </div>
+        </div> */}
 
         <div>
           <h2>Jazmin 8K</h2>
@@ -44,7 +44,10 @@ function App() {
             defaultProjection="flat"
             hapticsCSV="https://video-player.nyc3.digitaloceanspaces.com/JazminLuv-MikeMancini-180-POV-FPVR-FULL_8kUHD.csv"
           >
+            <source src="https://video-player.nyc3.digitaloceanspaces.com/JazminLuv-MikeMancini-180-POV-FPVR-FULL_1k.mp4" data-quality="1K"></source>
+            <source src="https://video-player.nyc3.digitaloceanspaces.com/JazminLuv-MikeMancini-180-POV-FPVR-FULL_2k.mp4" data-quality="2K"></source>
             <source src="https://video-player.nyc3.digitaloceanspaces.com/JazminLuv-MikeMancini-180-POV-FPVR-FULL_4k.mp4" data-quality="4K"></source>
+            <source src="https://video-player.nyc3.digitaloceanspaces.com/JazminLuv-MikeMancini-180-POV-FPVR-FULL_8kHD.mp4" data-quality="8KHD"></source>
             <source src="https://video-player.nyc3.digitaloceanspaces.com/JazminLuv-MikeMancini-180-POV-FPVR-FULL_8kUHD.mp4" data-quality="8KUHD"></source>
           </VideoPlayer>
         </div>
